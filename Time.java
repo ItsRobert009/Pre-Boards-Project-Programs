@@ -16,7 +16,7 @@ class Time
                 System.out.println("Enter number of minutes");
                 this.mm = sc.nextInt();
             }
-            Time addtime(Time X)
+            Timee addtime(Time X)
                 {
                     int x = X.hh*60 + X.mm;
                     int y = this.hh*60 + this.mm;
