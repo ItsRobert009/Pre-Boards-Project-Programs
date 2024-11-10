@@ -1,8 +1,8 @@
 import java.util.*;
-class Tim
+class Time
     {
         int hh, mm;
-        Tim()
+        Time()
             {
             hh=mm=0;
         }
@@ -16,7 +16,7 @@ class Tim
                 System.out.println("Enter number of minutes");
                 this.mm = sc.nextInt();
             }
-            Tim addtime(Tim X)
+            Time addtime(Time X)
                 {
                     int x = X.hh*60 + X.mm;
                     int y = this.hh*60 + this.mm;
@@ -24,12 +24,12 @@ class Tim
                     int h1 = z/60;
                     z = z%60;
                     int m1 = z;
-                    Tim O = new Tim();
+                    Time O = new Time();
                     O.hh = h1; 
                     O.mm = m1;
                     return O;
                 }
-            Tim difftime(Tim X)
+            Tim difftime(Time X)
                 {
                     int x = X.hh*60 + X.mm;
                     int y = this.hh*60 + this.mm;
@@ -37,7 +37,7 @@ class Tim
                     int h1 = z/60;
                     z = z%60;
                     int m1 = z;
-                    Tim O = new Tim();
+                    Time O = new Time();
                     O.hh = h1;
                     O.mm = m1;
                     return O;
@@ -49,15 +49,15 @@ class Tim
                 
             
                 
-                    Tim A = new Tim();
+                    Time A = new Time();
                     A.readtime(); A.disptime();
-                    Tim b = new Tim();
+                    Time b = new Time();
                     b.readtime(); b.disptime();
                     System.out.println("Sum:");
-                    Tim S = A.addtime(b);
+                    Time S = A.addtime(b);
                     S.disptime();
                     System.out.println("Difference:");
-                    Tim D = A.difftime(b);
+                    Time D = A.difftime(b);
                     D.disptime();
                 }
             
